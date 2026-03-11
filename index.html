@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bikash Pradhan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- LINK CSS -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="CD"></div>
+<div id="CR"></div>
+
+<!-- WIPE OVERLAY -->
+<div id="WIPE"></div>
+
+<!-- STAR BG CANVAS -->
+<canvas id="SC"></canvas>
+
+<!-- DICE 3D CANVAS -->
+<canvas id="DC"></canvas>
+
+<!-- BADGE -->
+<div id="BADGE"></div>
+
+<!-- ══ LANDING ══ -->
+<div id="LND">
+  <div id="TNAV">
+    <div class="logo">PORTFOLIO<span>.DEV // 2026</span></div>
+    <div class="tnav-btns">
+      <button class="tnav-btn" id="tnb-about">About</button>
+      <button class="tnav-btn" id="tnb-projects">Projects</button>
+      <button class="tnav-btn" id="tnb-contact">Contact</button>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-tag"><span class="hero-bar"></span>Interactive 3D Portfolio · 2026<span class="hero-bar"></span></div>
+    <h1 class="hero-h1">ROLL THE<em>DICE.</em></h1>
+    <p class="hero-p">Every roll reveals a new story. Click the floating cube to randomly explore a section.</p>
+  </div>
+  <div id="HINT">
+    <div class="hint-chip"><span class="hint-dot"></span>Click dice · Press Space to roll</div>
+    <div class="hint-line"></div>
+  </div>
+</div>
+
+<!-- ══ SECTION SHELL ══ -->
+<div id="SHELL">
+  <nav id="SNAV">
+    <div class="snav-logo">PORTFOLIO.DEV</div>
+    <div class="snav-links">
+      <button class="snav-btn" id="snb-about">About</button>
+      <button class="snav-btn" id="snb-projects">Projects</button>
+      <button class="snav-btn" id="snb-services">Services</button>
+      <button class="snav-btn" id="snb-blog">Blog</button>
+      <button class="snav-btn" id="snb-skills">Skills</button>
+      <button class="snav-btn" id="snb-experience">Experience</button>
+      <button class="snav-btn" id="snb-contact">Contact</button>
+      <button class="snav-btn" id="snb-resume">Resume</button>
+    </div>
+    <button class="snav-back" id="backBtn">Back to Dice</button>
+  </nav>
+
+  <!-- ABOUT -->
+  <div class="pg" id="pg-about">
+    <div class="kicker">Who I Am</div>
+    <h2 class="sh">ABOUT<br><span style="color:var(--aqua)">ME.</span></h2>
+    <div class="ab-grid">
+      <div style="position:relative">
+        <div class="ab-photo">
+          <div class="apc tl"></div><div class="apc tr"></div><div class="apc bl"></div><div class="apc br"></div>
+          
+          <span style="position:relative;z-index:2">👨‍💻</span>
+        </div>
+        <!-- <div class="ab-badge"><div class="ab-badge-n">5+</div><div class="ab-badge-l">Years Coding</div></div> -->
+        <div class="ab-stats" style="margin-top:40px">
+          <div class="ab-stat"><div class="ab-stat-n" id="cnt1">0</div><div class="ab-stat-l">Projects</div></div>
+          <div class="ab-stat"><div class="ab-stat-n" id="cnt2">0</div><div class="ab-stat-l">Clients</div></div>
+          <div class="ab-stat"><div class="ab-stat-n" id="cnt3">0</div><div class="ab-stat-l">Years</div></div>
+        </div>
+      </div>
+      <div>
+        <p class="ab-p">Hey — I'm a Bikash Pradhan<strong style="color:var(--aqua)">Software Developer & Educator </strong> from Surat, India. I build things at the intersection of Mathematics , code, and artificial intelligence.</p>
+        <p class="ab-p">I specialize in Python, Node.js, ML, DL,Computer Vision, and cutting-edge AI integrations — helping Indian businesses automate, scale, and perform extraordinary online.</p>
+        <p class="ab-p">I believe great software is art with a function. I obsess over every code, every millisecond, every interaction.</p>
+        <div class="ab-rule"></div>
+        <div class="tl">
+          <div class="tl-it"><div class="tl-dot"></div><div><div class="tl-yr">2025 — PRESENT</div><div class="tl-ti">Assistant Professor </div><div class="tl-de">As an educator, I develop software while teaching Object-Oriented Programming, system design, and software testing, bridging practical development with theoretical concepts.</div></div></div>
+          <div class="tl-it"><div class="tl-dot"></div><div><div class="tl-yr">2024 — 2025</div><div class="tl-ti">ERP Developer &  AI/ML Engineer</div><div class="tl-de">I have experience in automation within supply chain processes, including ERP sales and purchase cycles, and customizing Business Central tools for specific business needs. Additionally, I have worked on NLP projects and am currently developing agentic AI solutions, chatbots, and large language model (LLM) applications.</div></div></div>
+          <div class="tl-it"><div class="tl-dot"></div><div><div class="tl-yr">2022 — 2024</div><div class="tl-ti">MCA From SCET  College</div><div class="tl-de">Master of Computer Applications. First-class distinction. Built some final project.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="pg" id="pg-projects">
+    <div class="kicker">What I Built</div>
+    <h2 class="sh">FEATURED<br><span style="color:var(--violet)">PROJECTS.</span></h2>
+    <p class="sl">A curated selection spanning AI, 3D web, SaaS, and local business solutions.</p>
+    <div class="pj-grid">
+      <div class="pj-card"><div class="pj-thumb"><div class="pj-thumb-grid"></div><div class="pj-glow"></div><span style="position:relative;z-index:2">🤖</span><div class="pj-num">01</div></div><div class="pj-body"><div class="pj-tags"><span class="pj-tag">GPT-4</span><span class="pj-tag">Node.js</span><span class="pj-tag">WhatsApp</span></div><div class="pj-name">AI Business Chatbot</div><div class="pj-desc">Intelligent WhatsApp bot handling 200+ daily queries for a Surat textile business. 40% reduction in support load.</div><div class="pj-btns"><a class="pj-btn s" href="#">Live →</a><a class="pj-btn g" href="#">GitHub</a></div></div></div>
+      <div class="pj-card"><div class="pj-thumb"><div class="pj-thumb-grid"></div><div class="pj-glow"></div><span style="position:relative;z-index:2">🌐</span><div class="pj-num">02</div></div><div class="pj-body"><div class="pj-tags"><span class="pj-tag">React</span><span class="pj-tag">Firebase</span><span class="pj-tag">SaaS</span></div><div class="pj-name">GST Invoice SaaS</div><div class="pj-desc">Micro-SaaS for Indian SMEs — GST-compliant invoices with UPI integration. 500+ paying users at ₹199/month.</div><div class="pj-btns"><a class="pj-btn s" href="#">Live →</a><a class="pj-btn g" href="#">GitHub</a></div></div></div>
+      <div class="pj-card"><div class="pj-thumb"><div class="pj-thumb-grid"></div><div class="pj-glow"></div><span style="position:relative;z-index:2">🎓</span><div class="pj-num">03</div></div><div class="pj-body"><div class="pj-tags"><span class="pj-tag">Three.js</span><span class="pj-tag">3D</span><span class="pj-tag">Firebase</span></div><div class="pj-name">3D Alumni Time Portal</div><div class="pj-desc">3D college alumni portal with time-travel year navigation, walking path and real-time Firebase database.</div><div class="pj-btns"><a class="pj-btn s" href="#">Live →</a><a class="pj-btn g" href="#">GitHub</a></div></div></div>
+      <div class="pj-card"><div class="pj-thumb"><div class="pj-thumb-grid"></div><div class="pj-glow"></div><span style="position:relative;z-index:2">👟</span><div class="pj-num">04</div></div><div class="pj-body"><div class="pj-tags"><span class="pj-tag">HTML/CSS</span><span class="pj-tag">JS</span><span class="pj-tag">WhatsApp API</span></div><div class="pj-name">Shoe Shop E-Commerce</div><div class="pj-desc">Local fashion shop website with wishlist, WhatsApp COD ordering and animated product filters. Orders up 3×.</div><div class="pj-btns"><a class="pj-btn s" href="#">Live →</a><a class="pj-btn g" href="#">GitHub</a></div></div></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="pg" id="pg-services">
+    <div class="kicker">What I Offer</div>
+    <h2 class="sh">MY<br><span style="color:var(--rose)">SERVICES.</span></h2>
+    <p class="sl">End-to-end digital solutions — from AI automation to 3D experiences — delivered with craft and speed.</p>
+    <div class="sv-grid">
+      <div class="sv-card"><div class="sv-ico">🤖</div><div class="sv-name">AI Automation</div><div class="sv-desc">Intelligent chatbots, workflow automations, and GPT-4 integrations that scale your business 24/7.</div><ul class="sv-list"><li>WhatsApp & Website Chatbots</li><li>n8n / Make / LangGraph Workflows</li><li>OpenAI/Gemini API Integration</li><li>Lead Generation Automation</li></ul></div>
+      <div class="sv-card"><div class="sv-ico">⚡</div><div class="sv-name">Backend API Integration</div><div class="sv-desc">Fast, modern, conversion-optimized web apps built with the latest stack .</div><ul class="sv-list"><li>Node.js / Django /Flask Applications</li><li>Node.js REST APIs</li><li>Firebase & MongoDB Backends</li><li>Performance Optimization</li></ul></div>
+      <div class="sv-card"><div class="sv-ico">🎲</div><div class="sv-name">3D & Interactive Web</div><div class="sv-desc">Award-worthy 3D portfolios and immersive web experiences using Three.js, WebGL and GSAP.</div><ul class="sv-list"><li>Three.js 3D Experiences</li><li>Interactive Portfolio Sites</li><li>WebGL Shaders & Effects</li><li>Motion-rich Landing Pages</li></ul></div>
+      <div class="sv-card"><div class="sv-ico">📱</div><div class="sv-name">Digital Strategy</div><div class="sv-desc">Complete digital presence strategy for Indian MSMEs — branding, deployment, SEO and analytics.</div><ul class="sv-list"><li>SEO & Core Web Vitals</li><li>Firebase Cloud Deployment</li><li>Google Analytics Setup</li><li>Social Commerce Integration</li></ul></div>
+    </div>
+  </div>
+
+  <!-- BLOG -->
+  <div class="pg" id="pg-blog">
+    <div class="kicker">My Thoughts</div>
+    <h2 class="sh">LATEST<br><span style="color:var(--emerald)">ARTICLES.</span></h2>
+    <p class="sl">I write about AI, 3D web dev, and building a tech business in India. Real experience. No fluff.</p>
+    <div class="bl-layout">
+      <div class="bl-hero">
+        <div class="bl-hero-img"><div class="bl-dots"></div><span style="position:relative;z-index:2;font-size:5rem">🤖</span></div>
+        <div class="bl-body">
+          <div class="bl-cat"><span class="bl-cat-d"></span>AI Automation</div>
+          <div class="bl-ti">How I Built a WhatsApp AI Bot in 3 Days for a Surat Business</div>
+          <div class="bl-ex">Full breakdown of building a GPT-4 WhatsApp chatbot — exact tools, architecture, challenges and real results after 30 days.</div>
+          <div class="bl-meta"><span>March 2026</span><span>·</span><span>8 min read</span></div>
+        </div>
+      </div>
+      <div class="bl-side">
+        <div class="bl-mini"><div class="bl-cat"><span class="bl-cat-d"></span>Business</div><div class="bl-ti">MCA to ₹1 Crore: My 2026 Solopreneur Roadmap</div><div class="bl-ex">The exact 12-month plan I'm executing to build a sustainable ₹1Cr business from Surat.</div><span class="read-a">Read Soon →</span></div>
+        <div class="bl-mini"><div class="bl-cat"><span class="bl-cat-d"></span>3D Web</div><div class="bl-ti">Building a Bruno Simon Portfolio with Three.js</div><div class="bl-ex">How I created an immersive 3D portfolio from scratch — pure Three.js geometry, no Blender.</div><span class="read-a">Read Soon →</span></div>
+        <div class="bl-mini"><div class="bl-cat"><span class="bl-cat-d"></span>Dev</div><div class="bl-ti">Best Freelance Stack for Indian Developers in 2026</div><div class="bl-ex">React, Node or Python? What actually gets clients in India's 2026 market — with real data.</div><span class="read-a">Read Soon →</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="pg" id="pg-skills">
+    <div class="kicker">My Toolkit</div>
+    <h2 class="sh">SKILLS &<br><span style="color:var(--amber)">STACK.</span></h2>
+    <p class="sl">Technologies I use daily to build modern, high-performance digital experiences.</p>
+    <div class="sk-wrap">
+      <div>
+        <div class="sk-gtitle">Core Proficiency</div>
+        <div class="sk-list">
+          <div class="sk-row"><div class="sk-head"><span class="sk-name">Java / C++</span><span class="sk-pct">92%</span></div><div class="sk-track"><div class="sk-fill" data-w="92"></div></div></div>
+          <div class="sk-row"><div class="sk-head"><span class="sk-name">Python & AI/ML</span><span class="sk-pct">90%</span></div><div class="sk-track"><div class="sk-fill" data-w="88"></div></div></div>
+          <div class="sk-row"><div class="sk-head"><span class="sk-name">Node.js & REST APIs</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill" data-w="85"></div></div></div>
+          <div class="sk-row"><div class="sk-head"><span class="sk-name">Generative AI</span><span class="sk-pct">78%</span></div><div class="sk-track"><div class="sk-fill" data-w="78"></div></div></div>
+          <div class="sk-row"><div class="sk-head"><span class="sk-name">AI Automation</span><span class="sk-pct">90%</span></div><div class="sk-track"><div class="sk-fill" data-w="90"></div></div></div>
+          <div class="sk-row"><div class="sk-head"><span class="sk-name">Agentic AI</span><span class="sk-pct">82%</span></div><div class="sk-track"><div class="sk-fill" data-w="82"></div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sk-gtitle">Tech Stack</div>
+        <div class="tech-grid">
+          <div class="tech-item"><div class="tech-ico">🐍</div><div class="tech-name">Python</div></div>
+          <div class="tech-item"><div class="tech-ico">⚛️</div><div class="tech-name">React</div></div>
+          <div class="tech-item"><div class="tech-ico">🟢</div><div class="tech-name">Node.js</div></div>
+          <div class="tech-item"><div class="tech-ico">🍃</div><div class="tech-name">MongoDB</div></div>
+          <div class="tech-item"><div class="tech-ico">🔥</div><div class="tech-name">Firebase</div></div>
+          <div class="tech-item"><div class="tech-ico">🚀</div><div class="tech-name">AWS</div></div>
+          <div class="tech-item"><div class="tech-ico">🤖</div><div class="tech-name">OpenAI/Calude</div></div>
+          <div class="tech-item"><div class="tech-ico">⚙️</div><div class="tech-name">Automation</div></div>
+          <div class="tech-item"><div class="tech-ico">🐳</div><div class="tech-name">Docker</div></div>
+          <div class="tech-item"><div class="tech-ico">🔀</div><div class="tech-name">Git/Github</div></div>
+          <div class="tech-item"><div class="tech-ico">💻</div><div class="tech-name">Vibe Coding</div></div>
+          <div class="tech-item"><div class="tech-ico">😄</div><div class="tech-name">Smile</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="pg" id="pg-experience">
+    <div class="kicker">My Journey</div>
+    <h2 class="sh">WORK<br><span style="color:var(--aqua)">EXPERIENCE.</span></h2>
+    <p class="sl">From student to solopreneur — every step that shaped my craft.</p>
+    <div class="ex-list">
+      <div class="ex-item"><div class="ex-yr">2024–NOW</div><div class="ex-dot"></div><div class="ex-card"><div class="ex-role">Senior Developer & AI Consultant</div><div class="ex-co">FREELANCE / SOLOPRENEUR · SURAT, INDIA</div><div class="ex-desc">Leading AI automation for 10+ Indian businesses. Building SaaS products and 3D web experiences. Crossed ₹2L/month revenue milestone.</div><div class="ex-tags"><span class="ex-tag">React</span><span class="ex-tag">Three.js</span><span class="ex-tag">AI/ML</span><span class="ex-tag">SaaS</span></div></div></div>
+      <div class="ex-item"><div class="ex-yr">2022–2024</div><div class="ex-dot"></div><div class="ex-card"><div class="ex-role">Full-Stack Web Developer</div><div class="ex-co">FREELANCE · REMOTE</div><div class="ex-desc">Delivered 30+ projects for Indian startups and MSMEs. Specialized in React, Firebase & WhatsApp business integrations. 100% client satisfaction.</div><div class="ex-tags"><span class="ex-tag">React</span><span class="ex-tag">Firebase</span><span class="ex-tag">WhatsApp API</span></div></div></div>
+      <div class="ex-item"><div class="ex-yr">2021–2022</div><div class="ex-dot"></div><div class="ex-card"><div class="ex-role">Junior Web Developer (Internship)</div><div class="ex-co">TECH STARTUP · SURAT</div><div class="ex-desc">Built and maintained company websites. Implemented REST APIs. Reduced page load time by 60% through optimization.</div><div class="ex-tags"><span class="ex-tag">HTML/CSS</span><span class="ex-tag">JavaScript</span><span class="ex-tag">React</span></div></div></div>
+      <div class="ex-item"><div class="ex-yr">2019–2022</div><div class="ex-dot"></div><div class="ex-card"><div class="ex-role">MCA Student — Gold Medalist</div><div class="ex-co">ABC COLLEGE · DINDOLI, GURGANV</div><div class="ex-desc">Master of Computer Applications. Graduated with distinction. Built campus AI chatbot — 500+ daily active users within 2 weeks of launch.</div><div class="ex-tags"><span class="ex-tag">Python</span><span class="ex-tag">Java</span><span class="ex-tag">DBMS</span><span class="ex-tag">NLP</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="pg" id="pg-contact">
+    <div class="kicker">Get In Touch</div>
+    <h2 class="sh">LET'S<br><span style="color:var(--rose)">CONNECT.</span></h2>
+    <p class="sl">Have a project, collaboration, or just want to say hi? I respond within 24 hours.</p>
+    <div class="ct-grid">
+      <div class="ct-form">
+        <div class="ct-row">
+          <div class="fg"><label class="fl">Your Name</label><input class="fi" type="text" placeholder="John Doe"></div>
+          <div class="fg"><label class="fl">Email</label><input class="fi" type="email" placeholder="hello@example.com"></div>
+        </div>
+        <div class="fg"><label class="fl">Subject</label><input class="fi" type="text" placeholder="Project inquiry..."></div>
+        <div class="fg"><label class="fl">Message</label><textarea class="fi" placeholder="Tell me about your project..."></textarea></div>
+        <button class="ct-sub">Send Message →</button>
+      </div>
+      <div class="ct-info">
+        <div class="ct-item"><div class="ct-ico">📍</div><div><div class="ct-lbl">Location</div><div class="ct-val">Surat, Gujarat, India</div></div></div>
+        <div class="ct-item"><div class="ct-ico">📧</div><div><div class="ct-lbl">Email</div><div class="ct-val">guruvikash1305@gmail.com</div></div></div>
+        <div class="ct-item"><div class="ct-ico">📱</div><div><div class="ct-lbl">WhatsApp</div><div class="ct-val">+916354039551</div></div></div>
+        <div class="ct-item"><div class="ct-ico">⏰</div><div><div class="ct-lbl">Response Time</div><div class="ct-val">Within 24 Hours</div></div></div>
+        <div style="background:var(--glass);border:1px solid var(--border);padding:20px">
+          <div class="fl" style="margin-bottom:12px">Find Me Online</div>
+          <div class="ct-socs">
+            <a class="ct-soc" href="#" title="LinkedIn">💼</a>
+            <a class="ct-soc" href="#" title="GitHub">🐙</a>
+            <a class="ct-soc" href="#" title="Twitter">🐦</a>
+            <a class="ct-soc" href="#" title="Instagram">📸</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME -->
+  <div class="pg" id="pg-resume">
+    <div class="kicker">My Credentials</div>
+    <h2 class="sh">RESUME &<br><span style="color:var(--amber)">WINS.</span></h2>
+    <p class="sl">Qualifications, certifications, and milestones that define my career so far.</p>
+    <a href="asserts/resume.pdf">
+      <button class="dl-btn">⬇ Download Full Resume (PDF)</button>
+    </a>
+    <div class="rs-grid">
+      <div class="rs-card">
+        <div class="rs-ct">🏅 Certifications</div>
+        <div class="cert-list">
+          <div class="cert-it"><div class="cert-ico">🤖</div><div><div class="cert-name">Google AI / ML Certificate</div><div class="cert-meta">Google Developers · 2024</div></div></div>
+          <div class="cert-it"><div class="cert-ico">⚛️</div><div><div class="cert-name">Meta React Developer</div><div class="cert-meta">Meta / Coursera · 2023</div></div></div>
+          <div class="cert-it"><div class="cert-ico">☁️</div><div><div class="cert-name">AWS Cloud Practitioner</div><div class="cert-meta">Amazon · 2023</div></div></div>
+          <div class="cert-it"><div class="cert-ico">🐍</div><div><div class="cert-name">Python for Data Science</div><div class="cert-meta">IBM / Coursera · 2022</div></div></div>
+        </div>
+      </div>
+      <div class="rs-card">
+        <div class="rs-ct">⭐ Achievements</div>
+        <div class="ach-list">
+          <div class="ach-it"><div class="ach-ico">🥇</div><div class="ach-tx"><strong>MCA </strong> — SCET College, Batch 2022</div></div>
+          <div class="ach-it"><div class="ach-ico">🚀</div><div class="ach-tx"><strong>5+ Projects</strong> delivered with 100% client satisfaction</div></div>
+          <div class="ach-it"><div class="ach-ico">💰</div><div class="ach-tx"><strong>₹4.2 LPA</strong> solo revenue milestone hit in 2025</div></div>
+          <div class="ach-it"><div class="ach-ico">🤝</div><div class="ach-tx"><strong>3+ Happy Clients</strong> across India and globally</div></div>
+          <div class="ach-it"><div class="ach-ico">⭐</div><div class="ach-tx"><strong> GitHub Stars</strong> on open source projects</div></div>
+          <div class="ach-it"><div class="ach-ico">✍️</div><div class="ach-tx"><strong>Beginning of Journey</strong> on tech blog</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
